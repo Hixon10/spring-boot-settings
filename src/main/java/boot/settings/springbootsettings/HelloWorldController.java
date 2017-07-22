@@ -20,6 +20,8 @@ public class HelloWorldController {
     @RequestMapping(value = "/", method=RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public String sayHello() {
-        return String.valueOf(workService.getSomeString(1, 2, " space "));
+        return String.format("%s %s",
+                workService.getSomeString(1, 2, " space "),
+                workService.getSomeAnotherString());
     }
 }
