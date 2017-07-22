@@ -17,6 +17,6 @@ public class WorkService {
             return "HAHA" + a + c + b;
         }
 
-        return "1";
+        return "2";
     }
 }
